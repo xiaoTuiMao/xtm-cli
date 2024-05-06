@@ -16,11 +16,11 @@ A new CLI generated with oclif
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g cli-demo
+$ npm install -g xtm-cli
 $ XTM COMMAND
 running command...
 $ XTM (--version)
-cli-demo/0.0.0 darwin-arm64 node-v18.19.0
+xtm-cli/0.0.0 linux-x64 node-v18.20.2
 $ XTM --help [COMMAND]
 USAGE
   $ XTM COMMAND
@@ -29,8 +29,6 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`XTM hello PERSON`](#xtm-hello-person)
-* [`XTM hello world`](#xtm-hello-world)
 * [`XTM help [COMMAND]`](#xtm-help-command)
 * [`XTM plugins`](#xtm-plugins)
 * [`XTM plugins add PLUGIN`](#xtm-plugins-add-plugin)
@@ -42,48 +40,6 @@ USAGE
 * [`XTM plugins uninstall [PLUGIN]`](#xtm-plugins-uninstall-plugin)
 * [`XTM plugins unlink [PLUGIN]`](#xtm-plugins-unlink-plugin)
 * [`XTM plugins update`](#xtm-plugins-update)
-
-## `XTM hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ XTM hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ XTM hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/oclif-demo/xtm-cli/blob/v0.0.0/src/commands/hello/index.ts)_
-
-## `XTM hello world`
-
-Say hello world
-
-```
-USAGE
-  $ XTM hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ XTM hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/oclif-demo/xtm-cli/blob/v0.0.0/src/commands/hello/world.ts)_
 
 ## `XTM help [COMMAND]`
 
@@ -151,7 +107,7 @@ GLOBAL FLAGS
 DESCRIPTION
   Installs a plugin into XTM.
 
-  Uses bundled npm executable to install plugins into /Users/pengrongshu/.local/share/XTM
+  Uses bundled npm executable to install plugins into /home/runner/.local/share/XTM
 
   Installation of a user-installed plugin will override a core plugin.
 
@@ -225,7 +181,7 @@ GLOBAL FLAGS
 DESCRIPTION
   Installs a plugin into XTM.
 
-  Uses bundled npm executable to install plugins into /Users/pengrongshu/.local/share/XTM
+  Uses bundled npm executable to install plugins into /home/runner/.local/share/XTM
 
   Installation of a user-installed plugin will override a core plugin.
 
