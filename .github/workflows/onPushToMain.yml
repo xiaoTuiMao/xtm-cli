@@ -34,6 +34,9 @@ jobs:
         run: |
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_USERNAME }}
+          git config --global credential.helper store
+          # 设置 credentials，确保使用 token 而不是默认的 GitHub Action token
+          echo "https://${{ secrets.GH_TOKEN }}:x-oauth-basic@github.com" > ~/.git-credentials
       - name: Generate oclif README
         if: ${{ steps.version-check.outputs.skipped == 'false' }}
         id: oclif-readme
